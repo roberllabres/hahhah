@@ -206,3 +206,36 @@ return lr_model, y_pred
 # Run Linear Regression
 
 1r_model, y_pred_Ir = linear_regression_model(X_train, X_test, y_train, y_test)
+
+
+
+from sklearn.tree import DecisionTreeRegressor
+
+def decision tree regressor (X train, x_test, y train, y_test):
+
+dt regressor DecisionTreeRegressor (random_state-42)
+
+dt_regressor.fit(X_train, y_train)
+
+y_pred_dt dt_regressor.predict(X_test)
+
+mae_dt mean_absolute_error(y_test, y_pred_dt)
+
+mse dt mean squared_error(y_test, y_pred_dt)
+
+r2 dt r2_score(y_test, y_pred_dt)
+
+print(f"Decission Tree Model (Regression) Evaluation:")
+
+print("MAE: (mae dt)")
+
+print("MSE: (mse dt)")
+
+print(f"-squared: (r2_dt)")
+
+return dt regressor, y_pred_dt
+
+Decission Tree Model (Regression) Evaluation:
+
+dt_regressar, y pred_dt decision tree regressor(X_train, X_test, y_train, y_test)
+
