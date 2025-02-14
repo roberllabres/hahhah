@@ -85,3 +85,68 @@ print("Hissing data imputed. Total missing values: \n(data.ixnull().sum())")
 return data
 
 Clem the data (imputation) of cleaned handle missing data(df)
+
+
+
+
+
+
+def feature engineering(data):
+
+#Extract year and month from Month column
+
+data Year data Month.dt.year
+
+data Manth tum data 'Month").dt.month
+
+print (f"Extracted Year and Ponthin data "hunth", "Year", "Month Jum"]],head())")
+
+return data
+
+Run feature engineering
+
+df featured feature engineering of cleaned)
+
+#Scaling Mumerical Features (Soles, and Prufit
+
+def scale numerical features(data):
+
+ise Standardicalar to scale Sales" and "Frefit
+
+scaler StandardScaler()
+
+data 'Sales", 'Profit scaler.fit transform(data['Sales", "Prafit" [])
+
+print("Scaled 'Sales' and 'Profit"\n(data['Sales", "Profit"]].head()")
+
+return data
+
+Aun scaling
+
+df scaled scale_numerical_features(df_featured)
+
+#Train-Test spite
+
+def train test split_data(data):
+
+Define features (X) and torget (y)
+
+X-data['Sales", "Profit", "Year', 'Month hum', 'Residence Encoded #Fratures
+
+y data 'Sales' Target var luble
+
+#Spilt duto into training and testing sets (80% train, 20% text)
+
+Xtrals, Xtest, y train, y test train test split(x, y, test size 8.2, random state-42)
+
+print("Train-Test Split: (Xtrain.shape(0)) training samples, [X test.shape[0]) testing samples.")
+
+return X train, X test, y train, y test
+
+Run trole-test split
+
+Xtrain, test, y train, y test train test split_data[df_scaled)
+
+Output the first few rows of training dute
+
+print("X train sample:Xtrain.head())")
