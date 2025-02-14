@@ -1,0 +1,87 @@
+import pandas as pd
+
+import matplotlib.pyplot as plt
+
+from sklearn.preprocessing import LabelEncoder
+
+Load the downloaded sales dataset
+
+dfpd.read csv("C:/Users/Shayness/Documents/117/IT Prof Elec 1/25 5 2024 2025/ITPE2 Lab/Fruits_Sales.csv")
+
+print(df.head())
+
+print(df.info())
+
+Calculate basic statistics
+
+def hasic statistics(data):
+
+Tetal sales
+
+total sales data "Sales".sum()
+
+print('Total Sales: total _sales)")
+
+Average sales per month
+
+avg sales data.groupty("Honth") ['Sales"].wean()
+
+print (f'Average Sales per Month:in/avg_sales)")
+
+return total sales, avg sales
+
+Run basic statistics functian
+
+total sales, avg sales basic statistics(df)
+
+
+
+
+def plot sales(data):
+
+Convert enth to datetime, ensuring correct format
+
+deta "Hanth pd.to datetime(data) hinth, format-e, errors coerce')
+
+Plot sules aver time
+
+plt.figure(figsize(10, 6))
+
+plt.plot(data) Month, data['Sales'], label-'Sales Over Time', color-'b')
+
+plt.title('Sales Over Time)
+
+plt.xlabel("Month")
+
+pit.ylabel('Sales')
+
+plt.Ingend()
+
+plt.sticks (rotation-45)
+
+plt.show()
+
+Plot soles datu
+
+plot sales (df)
+
+
+
+
+from sklearn.model selection isport train test split from sklearn.preprocessing import StandardScaler
+
+Import numpy as np
+
+Handle datetime conversion for the "wanth column df Honth pd.to datetime(df"month"), errors coerce')
+
+Handle Niaxing Duto (putation)
+
+def handle missing data(data):
+
+PILL missing Profit values with the mean of the colu data 'Profit"] data 'Profit"].fillna(data 'Profit mean())
+
+print("Hissing data imputed. Total missing values: \n(data.ixnull().sum())")
+
+return data
+
+Clem the data (imputation) of cleaned handle missing data(df)
